@@ -1,0 +1,126 @@
+body {
+    font-family: "Arial", sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+
+
+header img {
+    float: right; /* Hace que la imagen flote a la derecha */
+    width: 50px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-top: 20px;
+}
+
+header {
+    overflow: hidden; /* Evita que los elementos floten fuera del contenedor */
+}
+
+.texto{
+    margin-top: 70px;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    max-width: 1500px;
+    
+}
+
+header {
+    background-color: #DB3E17; /* Rojo alusivo a Dragon Ball */
+    color: #FFFFFF;
+    padding: 1px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: flex; /* Utilizar flexbox para alinear los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+}
+
+header.nav-scroll {
+    background-color: rgba(219, 62, 23, 0.9); /* Cambio de color al hacer scroll */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #CCCCCC;
+}
+
+main {
+    padding-top: 70px; /* Ajuste para que el contenido no esté tapado por el encabezado */
+}
+
+section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.boton {
+    display: inline-block;
+    background-color: #DB3E17; /* Rojo alusivo a Dragon Ball */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #FF5733; /* Cambio de color al hacer hover */
+}
+
+footer {
+    background-color: #DB3E17; /* Rojo alusivo a Dragon Ball */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Animaciones */
+
+header {
+    animation: slideDown 0.5s;
+}
+
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

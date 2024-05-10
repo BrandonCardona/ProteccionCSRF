@@ -1,0 +1,9 @@
+<form action="/edit" method="POST" class="edit-container">
+    <h1>Editar Email</h1>
+    
+    <link rel="stylesheet" href="css/edit.css">
+    <input type="email" name="email" placeholder="Nuevo email" required>
+    <input type="password" name="password" placeholder="Nueva Password" required>
+    <input type="hidden" name="csrf" value="{{ token }}">
+    <input type="submit">
+</form>

